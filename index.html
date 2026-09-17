@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>赵梓任 · 一个正在慢慢发光的女孩</title>
+  <meta name="description" content="赵梓任的个人网站 —— 击剑、网球、狗狗爱好者。一个正在慢慢发光的女孩。" />
+
+  <!-- 卡通字体（已下载到本地 fonts/ 目录，不依赖 Google，
+       访客网络访问不了 Google 时也不会回退成系统字体） -->
+  <link rel="stylesheet" href="fonts.css?v=1" />
+
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+
+  <!-- 天空背景：云朵 + 星星（纯装饰） -->
+  <div class="sky" aria-hidden="true">
+    <svg class="cloud c1" viewBox="0 0 120 60"><g fill="#fff" stroke="#1C2836" stroke-width="3" stroke-linejoin="round"><path d="M18 42c-11 0-19-8-19-18 0-9 7-17 16-17C20 3 28-2 37-2c12 0 21 9 21 20 7 2 12 8 12 15 0 9-7 15-16 15z" transform="translate(0 6)"/><ellipse cx="70" cy="36" rx="30" ry="20"/><ellipse cx="96" cy="34" rx="22" ry="15"/></g></svg>
+    <svg class="cloud c2" viewBox="0 0 100 50"><g fill="#fff" stroke="#1C2836" stroke-width="3" stroke-linejoin="round"><ellipse cx="40" cy="30" rx="28" ry="18"/><ellipse cx="66" cy="28" rx="20" ry="14"/><path d="M10 30C2 30-4 24-4 16 2 8 12 6 18 10 20 2 30-2 38 0"/></g></svg>
+    <svg class="cloud c3" viewBox="0 0 90 46"><g fill="#fff" stroke="#1C2836" stroke-width="3" stroke-linejoin="round"><ellipse cx="34" cy="26" rx="26" ry="16"/><ellipse cx="60" cy="25" rx="18" ry="12"/></g></svg>
+    <span class="star s1">✦</span>
+    <span class="star s2">✧</span>
+    <span class="star s3">✦</span>
+    <span class="star s4">✧</span>
+  </div>
+
+  <!-- 顶部导航 -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#hero">
+      <span class="brand-dot"></span>
+      <span class="brand-name">赵赵的岛</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#about">关于我</a>
+      <a href="#skills">技能</a>
+      <a href="#gallery">相册</a>
+      <a href="#contact">找到我</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色主题" aria-pressed="false">
+      <span class="tt-ico sun" aria-hidden="true"></span>
+      <span class="tt-ico moon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ============ ① HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow reveal">Hey ! 我是</p>
+          <h1 class="name reveal" style="--d:.08s">赵梓任</h1>
+          <p class="tagline reveal" style="--d:.16s">一个正在慢慢发光的女孩</p>
+          <p class="intro reveal" style="--d:.24s">
+            追寻热爱，探索世界。<br />
+            每一个像素，都是我探索世界的注脚。
+          </p>
+          <div class="hero-actions reveal" style="--d:.32s">
+            <a class="btn btn-primary" href="#about">认识我</a>
+            <a class="btn btn-ghost" href="#gallery">看我的相册</a>
+          </div>
+        </div>
+
+        <!-- 辛普森风场景插画：黄色小人 + 甜甜圈 + 蓝天草地 -->
+        <div class="hero-art reveal" style="--d:.2s" aria-hidden="true">
+          <svg viewBox="0 0 520 470" role="img" aria-label="一个黄色皮肤的卡通小人拿着甜甜圈，站在蓝天下绿草地上">
+            <!-- 天空 -->
+            <rect x="0" y="0" width="520" height="470" fill="#8FD4F0"/>
+            <!-- 太阳 -->
+            <g>
+              <circle cx="452" cy="66" r="34" fill="#FFD90F" stroke="#1C2836" stroke-width="4"/>
+              <g stroke="#F5A623" stroke-width="4" stroke-linecap="round">
+                <line x1="452" y1="16" x2="452" y2="6"/>
+                <line x1="452" y1="116" x2="452" y2="126"/>
+                <line x1="402" y1="66" x2="392" y2="66"/>
+                <line x1="502" y1="66" x2="512" y2="66"/>
+                <line x1="418" y1="32" x2="411" y2="25"/>
+                <line x1="486" y1="100" x2="493" y2="107"/>
+                <line x1="486" y1="32" x2="493" y2="25"/>
+                <line x1="418" y1="100" x2="411" y2="107"/>
+              </g>
+            </g>
+            <!-- 云朵 -->
+            <g fill="#fff" stroke="#1C2836" stroke-width="4" stroke-linejoin="round">
+              <path d="M104 96c-13 0-24-10-24-23 0-12 10-22 22-22 4-10 13-18 25-18 14 0 25 11 25 25 8 2 14 9 14 18 0 11-9 20-20 20z"/>
+            </g>
+            <g fill="#fff" stroke="#1C2836" stroke-width="3" opacity=".95" stroke-linejoin="round">
+              <path d="M340 58c-10 0-18-8-18-17 0-9 7-16 16-16 3-6 10-11 18-11 10 0 19 8 19 18 6 1 10 6 10 12 0 8-6 14-15 14z"/>
+            </g>
+            <!-- 草地 -->
+            <path d="M0 396 Q90 366 180 388 Q300 418 420 384 Q480 366 520 376 L520 470 L0 470 Z" fill="#7CBF43" stroke="#2E6B2A" stroke-width="4"/>
+            <!-- 小花 -->
+            <g fill="#F6A6C1" stroke="#1C2836" stroke-width="3">
+              <circle cx="90" cy="428" r="10"/><circle cx="98" cy="418" r="10"/><circle cx="110" cy="428" r="10"/><circle cx="102" cy="438" r="10"/>
+              <circle cx="102" cy="428" r="8" fill="#FFD90F" stroke="none"/>
+            </g>
+            <g fill="#fff" stroke="#1C2836" stroke-width="3">
+              <circle cx="420" cy="432" r="9"/><circle cx="428" cy="423" r="9"/><circle cx="439" cy="432" r="9"/><circle cx="431" cy="441" r="9"/>
+              <circle cx="431" cy="432" r="7" fill="#FFD90F" stroke="none"/>
+            </g>
+            <!-- 主角：辛普森风小人 -->
+            <g>
+              <!-- 裤子 -->
+              <rect x="216" y="350" width="44" height="48" rx="10" fill="#D2373A" stroke="#1C2836" stroke-width="4"/>
+              <rect x="264" y="350" width="44" height="48" rx="10" fill="#D2373A" stroke="#1C2836" stroke-width="4"/>
+              <!-- 白T恤 -->
+              <path d="M206 258 L318 258 L322 360 L202 360 Z" fill="#fff" stroke="#1C2836" stroke-width="4" stroke-linejoin="round"/>
+              <!-- 右臂伸向甜甜圈 -->
+              <path d="M318 296 Q356 300 372 286" fill="none" stroke="#1C2836" stroke-width="4"/>
+              <path d="M318 296 Q356 300 372 286" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+              <!-- 手掌（4指卡通手） -->
+              <g fill="#FFD90F" stroke="#1C2836" stroke-width="4" stroke-linejoin="round">
+                <circle cx="382" cy="282" r="14"/>
+                <circle cx="392" cy="270" r="6"/>
+                <circle cx="398" cy="284" r="6"/>
+                <circle cx="392" cy="296" r="6"/>
+              </g>
+              <!-- 脖子 -->
+              <rect x="246" y="252" width="34" height="20" fill="#FFD90F" stroke="#1C2836" stroke-width="4"/>
+              <!-- 头 -->
+              <ellipse cx="262" cy="196" rx="72" ry="60" fill="#FFD90F" stroke="#1C2836" stroke-width="4"/>
+              <!-- 头顶发丝 -->
+              <path d="M212 158 q8 -26 28 -30" fill="none" stroke="#1C2836" stroke-width="4" stroke-linecap="round"/>
+              <path d="M240 142 q4 -14 16 -18" fill="none" stroke="#1C2836" stroke-width="4" stroke-linecap="round"/>
+              <!-- 大眼（凸出） -->
+              <ellipse cx="228" cy="186" rx="22" ry="25" fill="#fff" stroke="#1C2836" stroke-width="4"/>
+              <circle cx="237" cy="190" r="7" fill="#1C2836"/>
+              <circle cx="240" cy="186" r="2" fill="#fff"/>
+              <ellipse cx="296" cy="186" rx="22" ry="25" fill="#fff" stroke="#1C2836" stroke-width="4"/>
+              <circle cx="305" cy="190" r="7" fill="#1C2836"/>
+              <circle cx="308" cy="186" r="2" fill="#fff"/>
+              <!-- 鼻子 -->
+              <circle cx="263" cy="214" r="11" fill="#FFD90F" stroke="#1C2836" stroke-width="4"/>
+              <!-- 大嘴（厚唇） -->
+              <path d="M230 238 Q262 264 296 238 L296 248 Q262 274 230 248 Z" fill="#E98B7E" stroke="#1C2836" stroke-width="4" stroke-linejoin="round"/>
+            </g>
+            <!-- 甜甜圈 -->
+            <g>
+              <circle cx="410" cy="248" r="40" fill="#C68B4B" stroke="#1C2836" stroke-width="4"/>
+              <path d="M378 248 a32 32 0 0 1 64 0 l-30 6 -30 -6 z" fill="#F6A6C1" stroke="#1C2836" stroke-width="4"/>
+              <circle cx="410" cy="248" r="13" fill="#8FD4F0" stroke="#1C2836" stroke-width="4"/>
+              <g stroke-width="4" stroke-linecap="round">
+                <line x1="392" y1="232" x2="398" y2="226" stroke="#FF6B6B"/>
+                <line x1="418" y1="226" x2="426" y2="232" stroke="#6BCB77"/>
+                <line x1="406" y1="224" x2="406" y2="232" stroke="#4D96FF"/>
+                <line x1="428" y1="242" x2="436" y2="238" stroke="#F9D423"/>
+              </g>
+            </g>
+            <!-- 星星 -->
+            <path d="M150 150 l5 13 14 2 -10 9 2 14 -11 -7 -11 7 2 -14 -10 -9 14 -2z" fill="#FFD90F" stroke="#1C2836" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="向下滚动">向下走一点 <span class="arrow">↓</span></a>
+    </section>
+
+    <!-- ============ ② 关于我 ============ -->
+    <section class="section" id="about">
+      <div class="sec-head reveal">
+        <span class="sec-num">01</span>
+        <h2>关于我</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            我是<b>赵梓任</b>，一个正在<b>慢慢发光</b>的女孩。
+          </p>
+          <p>
+            我热爱运动——既享受<b>击剑</b>的专注与优雅，也喜欢在<b>网球</b>场上挥汗的畅快。
+          </p>
+          <p>
+            我还是个<b>狗狗爱好者</b>：毛茸茸的朋友总能点亮我的每一天。<br />
+            追寻热爱、探索世界，是我一直在做的事。
+          </p>
+        </div>
+        <div class="sticker-board reveal" style="--d:.12s" aria-hidden="true">
+          <div class="sticker s1"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="22" fill="#FFD90F" stroke="#1C2836" stroke-width="3"/><circle cx="20" cy="25" r="3" fill="#1C2836"/><circle cx="36" cy="25" r="3" fill="#1C2836"/><path d="M17 34 Q28 42 39 34" fill="none" stroke="#1C2836" stroke-width="3" stroke-linecap="round"/></svg>乐天派</div>
+          <div class="sticker s2"><svg viewBox="0 0 56 56"><circle cx="24" cy="24" r="15" fill="#9DC0DD" stroke="#1C2836" stroke-width="3"/><line x1="35" y1="35" x2="46" y2="46" stroke="#1C2836" stroke-width="4" stroke-linecap="round"/><line x1="17" y1="24" x2="31" y2="24" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>好奇心</div>
+          <div class="sticker s3"><svg viewBox="0 0 56 56"><path d="M28 6 l6 14 15 1 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -1z" fill="#F5A623" stroke="#1C2836" stroke-width="3" stroke-linejoin="round"/></svg>爱尝试</div>
+          <div class="sticker s4"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="20" fill="#7CBF43" stroke="#1C2836" stroke-width="3"/><circle cx="28" cy="28" r="13" fill="#fff" stroke="#1C2836" stroke-width="2.5"/><path d="M28 13 L32 28 L28 43 L24 28 Z" fill="#FFD90F" stroke="#1C2836" stroke-width="2.5"/><path d="M13 28 L28 24 L43 28 L28 32 Z" fill="#E98B7E" stroke="#1C2836" stroke-width="2.5"/><circle cx="28" cy="28" r="3" fill="#1C2836"/></svg>爱探索</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ③ 我的技能 ============ -->
+    <section class="section" id="skills">
+      <div class="sec-head reveal">
+        <span class="sec-num">02</span>
+        <h2>我的技能</h2>
+        <p class="sec-sub">在热爱里，一天比一天更厉害</p>
+      </div>
+
+      <div class="skill-list">
+        <div class="skill reveal">
+          <div class="skill-top"><span class="skill-name">运动属性</span><span class="skill-val">95%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-w="95" style="--c:#F5A623"></span></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-top"><span class="skill-name">语言表达</span><span class="skill-val">95%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-w="95" style="--c:#FFD90F"></span></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-top"><span class="skill-name">英语能力</span><span class="skill-val">90%</span></div>
+          <div class="skill-bar"><span class="skill-fill" data-w="90" style="--c:#7CBF43"></span></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-top"><span class="skill-name">AI 协作能力</span><span class="skill-val">增长中</span></div>
+          <div class="skill-bar"><span class="skill-fill growing" style="--c:#4A7BB5"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ④ 相册 ============ -->
+    <section class="section" id="gallery">
+      <div class="sec-head reveal">
+        <span class="sec-num">03</span>
+        <h2>我的相册</h2>
+        <p class="sec-sub">我热爱的生活 · 点击照片可以看大图</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- 6 个相框（当前为占位，替换成你的真实照片即可） -->
+        <figure class="ph reveal" data-title="我的击剑时刻"><div class="ph-slot"><svg viewBox="0 0 120 120"><rect x="20" y="30" width="80" height="56" rx="8" fill="#FFFBE9" stroke="#1C2836" stroke-width="4"/><rect x="44" y="22" width="32" height="12" rx="4" fill="#FFFBE9" stroke="#1C2836" stroke-width="4"/><circle cx="60" cy="58" r="16" fill="#9DC0DD" stroke="#1C2836" stroke-width="4"/><circle cx="60" cy="58" r="6" fill="#FFF"/><circle cx="88" cy="40" r="3" fill="#F5A623"/></svg></div><figcaption>击剑</figcaption></figure>
+        <figure class="ph reveal" data-title="网球时光"><div class="ph-slot"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="30" fill="#F6C95B" stroke="#1C2836" stroke-width="4"/><path d="M38 38 Q60 52 38 82 M82 38 Q60 52 82 82" fill="none" stroke="#FFD90F" stroke-width="3"/></svg></div><figcaption>网球</figcaption></figure>
+        <figure class="ph reveal" data-title="汪汪小法斗"><div class="ph-slot"><svg viewBox="0 0 120 120"><style>
+          @keyframes dogBark{0%,42%,100%{transform:scaleY(0)}14%,30%{transform:scaleY(1)}}
+          .dog-mouth{transform-box:fill-box;transform-origin:top;animation:dogBark 1.25s ease-in-out infinite}
+          @keyframes woofPop{0%,42%,100%{opacity:0}16%,30%{opacity:1;transform:translateY(-6px)}}
+          .woof{transform-box:fill-box;transform-origin:center;animation:woofPop 1.25s ease-in-out infinite;opacity:0}
+          @keyframes earWiggle{0%,100%{transform:rotate(0)}22%{transform:rotate(-7deg)}40%{transform:rotate(5deg)}}
+          .dog-ear{transform-box:fill-box;transform-origin:center;animation:earWiggle 1.25s ease-in-out infinite}
+          @keyframes tailWag{0%,100%{transform:rotate(10deg)}50%{transform:rotate(-10deg)}}
+          .dog-tail{transform-box:fill-box;transform-origin:bottom left;animation:tailWag .5s ease-in-out infinite}
+        </style>
+          <!-- 尾巴 -->
+          <path class="dog-tail" d="M18 92 q-6 -2 -2 -14" fill="none" stroke="#1C2836" stroke-width="5" stroke-linecap="round"/>
+          <!-- 身体 -->
+          <rect x="40" y="84" width="44" height="26" rx="13" fill="#F7EFDE" stroke="#1C2836" stroke-width="4"/>
+          <!-- 前爪 -->
+          <rect x="46" y="104" width="12" height="12" rx="5" fill="#F7EFDE" stroke="#1C2836" stroke-width="3"/>
+          <rect x="66" y="104" width="12" height="12" rx="5" fill="#F7EFDE" stroke="#1C2836" stroke-width="3"/>
+          <!-- 蝙蝠耳 -->
+          <path class="dog-ear" d="M30 40 q-12 -18 6 -24 q14 -4 12 14 z" fill="#F7EFDE" stroke="#1C2836" stroke-width="4"/>
+          <path class="dog-ear" d="M90 40 q12 -18 -6 -24 q-14 -4 -12 14 z" fill="#C9A268" stroke="#1C2836" stroke-width="4"/>
+          <!-- 头部 -->
+          <ellipse cx="60" cy="58" rx="32" ry="28" fill="#F7EFDE" stroke="#1C2836" stroke-width="4"/>
+          <!-- 额纹 -->
+          <path d="M52 36 q8 6 16 0" fill="none" stroke="#C9A268" stroke-width="2.5"/>
+          <!-- 眼睛 -->
+          <circle cx="46" cy="52" r="4" fill="#1C2836"/><circle cx="47" cy="51" r="1.4" fill="#fff"/>
+          <circle cx="74" cy="52" r="4" fill="#1C2836"/><circle cx="75" cy="51" r="1.4" fill="#fff"/>
+          <!-- 短吻 -->
+          <ellipse cx="60" cy="66" rx="20" ry="13" fill="#EFE3CC" stroke="#1C2836" stroke-width="3"/>
+          <!-- 鼻子 -->
+          <ellipse cx="60" cy="60" rx="7" ry="5" fill="#1C2836"/>
+          <!-- 汪汪嘴 -->
+          <g class="dog-mouth">
+            <path d="M42 72 Q60 92 78 72 L78 78 Q60 100 42 78 Z" fill="#8A2B34" stroke="#1C2836" stroke-width="3"/>
+            <path d="M56 82 q4 8 8 0" fill="#E98B7E" stroke="#1C2836" stroke-width="3"/>
+          </g>
+          <!-- 叫声气泡 -->
+          <text class="woof" x="34" y="34" font-family="'ZCOOL KuaiLe',sans-serif" font-size="15" fill="#F5A623" stroke="#1C2836" stroke-width="1">汪</text>
+          <text class="woof" x="78" y="30" font-family="'ZCOOL KuaiLe',sans-serif" font-size="13" fill="#F5A623" stroke="#1C2836" stroke-width="1">汪</text>
+        </svg></div><figcaption>狗狗</figcaption></figure>
+        <figure class="ph reveal" data-title="奔跑的小女孩"><div class="ph-slot"><svg viewBox="0 0 120 120"><style>
+          @keyframes legA{0%,100%{transform:rotate(-26deg)}50%{transform:rotate(26deg)}}
+          @keyframes legB{0%,100%{transform:rotate(26deg)}50%{transform:rotate(-26deg)}}
+          .run-legA{transform-box:fill-box;transform-origin:top center;animation:legA .55s ease-in-out infinite}
+          .run-legB{transform-box:fill-box;transform-origin:top center;animation:legB .55s ease-in-out infinite}
+          @keyframes armA{0%,100%{transform:rotate(28deg)}50%{transform:rotate(-28deg)}}
+          @keyframes armB{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
+          .run-armA{transform-box:fill-box;transform-origin:top center;animation:armA .55s ease-in-out infinite}
+          .run-armB{transform-box:fill-box;transform-origin:top center;animation:armB .55s ease-in-out infinite}
+          @keyframes pig{0%,100%{transform:rotate(-20deg)}50%{transform:rotate(20deg)}}
+          .run-pig{transform-box:fill-box;transform-origin:top center;animation:pig .55s ease-in-out infinite}
+          @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+          .run-body{transform-box:fill-box;transform-origin:center;animation:bob .55s ease-in-out infinite}
+        </style>
+          <g class="run-body">
+            <!-- 后腿 -->
+            <g class="run-legB">
+              <rect x="50" y="86" width="10" height="26" rx="5" fill="#F6C6A9" stroke="#1C2836" stroke-width="3"/>
+              <rect x="48" y="108" width="16" height="9" rx="4" fill="#7CBF43" stroke="#1C2836" stroke-width="3"/>
+            </g>
+            <!-- 前腿 -->
+            <g class="run-legA">
+              <rect x="66" y="86" width="10" height="26" rx="5" fill="#F6C6A9" stroke="#1C2836" stroke-width="3"/>
+              <rect x="64" y="108" width="16" height="9" rx="4" fill="#7CBF43" stroke="#1C2836" stroke-width="3"/>
+            </g>
+            <!-- 后背手臂 -->
+            <g class="run-armB">
+              <rect x="38" y="60" width="9" height="24" rx="4.5" fill="#F6C6A9" stroke="#1C2836" stroke-width="3"/>
+            </g>
+            <!-- 裙子 -->
+            <path d="M46 52 L78 52 L84 90 L40 90 Z" fill="#F6A6C1" stroke="#1C2836" stroke-width="3"/>
+            <path d="M42 88 L84 88" stroke="#1C2836" stroke-width="2.5"/>
+            <path d="M48 52 Q60 74 76 52" fill="none" stroke="#D980A5" stroke-width="3" opacity=".6"/>
+            <!-- 胸前手臂 -->
+            <g class="run-armA">
+              <rect x="74" y="58" width="9" height="24" rx="4.5" fill="#F6C6A9" stroke="#1C2836" stroke-width="3"/>
+            </g>
+            <!-- 头 -->
+            <ellipse cx="60" cy="38" rx="19" ry="17" fill="#F6C6A9" stroke="#1C2836" stroke-width="3"/>
+            <!-- 刘海 -->
+            <path d="M44 36 q2 -16 16 -16 q14 0 16 16 q-8 -6 -16 -6 q-8 0 -16 6z" fill="#5C3A21" stroke="#1C2836" stroke-width="3"/>
+            <!-- 羊角辫 -->
+            <g class="run-pig"><path d="M43 30 q-10 2 -8 12 q1 6 6 6" fill="none" stroke="#5C3A21" stroke-width="5" stroke-linecap="round"/></g>
+            <g class="run-pig"><path d="M77 30 q10 2 8 12 q-1 6 -6 6" fill="none" stroke="#5C3A21" stroke-width="5" stroke-linecap="round"/></g>
+            <!-- 眼睛+腮红 -->
+            <circle cx="53" cy="38" r="2.4" fill="#1C2836"/>
+            <circle cx="67" cy="38" r="2.4" fill="#1C2836"/>
+            <circle cx="48" cy="43" r="3" fill="#F6A6C1" opacity=".7"/>
+            <circle cx="72" cy="43" r="3" fill="#F6A6C1" opacity=".7"/>
+            <!-- 微笑 -->
+            <path d="M56 45 Q60 48 64 45" fill="none" stroke="#1C2836" stroke-width="2.2" stroke-linecap="round"/>
+          </g>
+        </svg></div><figcaption>探索</figcaption></figure>
+        <figure class="ph reveal" data-title="运动瞬间"><div class="ph-slot"><svg viewBox="0 0 120 120"><rect x="18" y="24" width="84" height="72" rx="10" fill="#FFFBE9" stroke="#1C2836" stroke-width="4"/><rect x="26" y="32" width="68" height="56" rx="6" fill="#C6E7F6" stroke="#1C2836" stroke-width="3"/><path d="M32 84 l22 -20 16 14 22 -24" fill="none" stroke="#F5A623" stroke-width="4" stroke-linejoin="round"/><circle cx="48" cy="52" r="6" fill="#fff" stroke="#1C2836" stroke-width="3"/></svg></div><figcaption>精彩</figcaption></figure>
+        <figure class="ph reveal" data-title="慢慢发光的我"><div class="ph-slot"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="28" fill="#FFD90F" stroke="#1C2836" stroke-width="4"/><circle cx="60" cy="60" r="40" fill="none" stroke="#F5A623" stroke-width="3" stroke-dasharray="3 6"/></svg></div><figcaption>我自己</figcaption></figure>
+      </div>
+
+      <p class="gallery-note reveal">把照片放进 <code>photos/</code> 文件夹，再替换每张图的图片即可变成真实相册。</p>
+    </section>
+
+    <!-- ============ ⑤ 联系 ============ -->
+    <section class="section" id="contact">
+      <div class="sec-head reveal">
+        <span class="sec-num">04</span>
+        <h2>找到我</h2>
+        <p class="sec-sub">很高兴认识你，来交个朋友吧</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:2872856817@qq.com" target="_blank" rel="noopener">
+          <span class="cc-ico"><svg viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="24" rx="5" fill="#fff" stroke="#1C2836" stroke-width="3"/><path d="M8 15 l16 12 16-12" fill="none" stroke="#1C2836" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="cc-title">邮箱</span><span class="cc-sub">2872856817@qq.com</span>
+        </a>
+
+        <button class="contact-card contact-card--btn reveal" type="button" data-fbopen aria-label="打开留言反馈框">
+          <span class="cc-ico"><svg viewBox="0 0 48 48"><path d="M8 10h32a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H22l-10 8v-8H8a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z" fill="#FFD90F" stroke="#1C2836" stroke-width="3" stroke-linejoin="round"/><path d="M24 27.5c-4.5-3.2-7-5.5-7-8 0-2 1.5-3.5 3.5-3.5 1.3 0 2.6.7 3.5 2 .9-1.3 2.2-2 3.5-2 2 0 3.5 1.5 3.5 3.5 0 2.5-2.5 4.8-7 8z" fill="#E94F37" stroke="#1C2836" stroke-width="2.5" stroke-linejoin="round"/></svg></span>
+          <span class="cc-title">给我留言</span><span class="cc-sub">觉得网站哪里可以更好？告诉我</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p class="footer-brand">赵赵的岛 · 慢慢发光</p>
+    <p class="footer-note">by <b>赵赵</b></p>
+  </footer>
+
+  <!-- 相册灯箱 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-backdrop" data-lbclose></div>
+    <button class="modal-close lb-close" data-lbclose aria-label="关闭大图">×</button>
+    <figure class="lightbox-fig" id="lbFig"></figure>
+    <p class="lightbox-title" id="lbTitle"></p>
+  </div>
+
+  <!-- 悬浮入口：给我留言 -->
+  <button class="fb-fab" id="fbFab" type="button" data-fbopen aria-label="打开留言反馈框" title="给我留言">
+    <span class="fb-fab-emo" aria-hidden="true">💌</span>
+    <span class="fb-fab-txt">给我留言</span>
+  </button>
+
+  <!-- 留言反馈弹窗（提交后可在 Netlify 后台 Forms 里查看） -->
+  <div class="fb-modal" id="fbModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="fbTitle">
+    <div class="fb-backdrop" data-fbclose></div>
+
+    <div class="fb-card" role="document">
+      <button class="modal-close fb-close" type="button" data-fbclose aria-label="关闭留言框">×</button>
+
+      <!-- ① 写留言 -->
+      <div class="fb-view" id="fbFormView">
+        <div class="fb-head">
+          <span class="fb-emo" aria-hidden="true">💌</span>
+          <h3 class="fb-title" id="fbTitle">给我留言 <small>FEEDBACK</small></h3>
+        </div>
+        <p class="fb-desc">觉得网站哪里好看、哪里想吐槽，或者想让我加点什么，都可以写给我～</p>
+
+        <form id="fbForm" name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?fb=thanks">
+          <input type="hidden" name="form-name" value="feedback" />
+          <p class="fb-trap" aria-hidden="true">
+            <label>请勿填写<input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <label class="fb-field">
+            <span class="fb-label">你的昵称 <i>（可以不填）</i></span>
+            <input type="text" name="nickname" maxlength="24" placeholder="比如：小明" autocomplete="nickname" />
+          </label>
+
+          <div class="fb-field">
+            <span class="fb-label">给网站打个分 <i>（可以不点）</i></span>
+            <div class="fb-stars" id="fbStars" role="radiogroup" aria-label="网站评分">
+              <button type="button" class="fb-star" data-v="1" aria-label="1 分">★</button>
+              <button type="button" class="fb-star" data-v="2" aria-label="2 分">★</button>
+              <button type="button" class="fb-star" data-v="3" aria-label="3 分">★</button>
+              <button type="button" class="fb-star" data-v="4" aria-label="4 分">★</button>
+              <button type="button" class="fb-star" data-v="5" aria-label="5 分">★</button>
+              <span class="fb-score" id="fbScore">还没打分</span>
+            </div>
+            <input type="hidden" name="rating" id="fbRating" value="" />
+          </div>
+
+          <label class="fb-field">
+            <span class="fb-label">想对我说的话 <b>（必填）</b></span>
+            <textarea name="message" id="fbMsg" rows="4" maxlength="800" required placeholder="随便写点什么都可以…"></textarea>
+            <span class="fb-count" id="fbCount">0 / 800</span>
+          </label>
+
+          <label class="fb-field">
+            <span class="fb-label">怎么联系你 <i>（可以不填，方便我回复你）</i></span>
+            <input type="text" name="contact" maxlength="60" placeholder="邮箱 / 微信 / QQ 都行" autocomplete="off" />
+          </label>
+
+          <div class="fb-actions">
+            <button class="btn btn-primary" type="submit" id="fbSubmit">发送留言</button>
+            <button class="btn btn-ghost" type="button" data-fbclose>先不写了</button>
+          </div>
+          <p class="fb-status" id="fbStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- ② 发送成功 -->
+      <div class="fb-view fb-done" id="fbDoneView" hidden>
+        <span class="fb-done-emo" aria-hidden="true">🎉</span>
+        <h3 class="fb-title fb-done-title">收到啦，谢谢你！</h3>
+        <p class="fb-desc">每一条留言赵赵都会看的，祝你今天也开开心心～</p>
+        <div class="fb-actions">
+          <button class="btn btn-primary" type="button" data-fbclose>好耶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
