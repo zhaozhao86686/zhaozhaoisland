@@ -1,0 +1,12 @@
+﻿# 系统 / 编辑器垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Netlify CLI 本地状态
+.netlify/
+
+# 打包产物（双站都从仓库根目录发布，不需要 zip）
+*.zip
