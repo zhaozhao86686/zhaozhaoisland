@@ -1,0 +1,29 @@
+# Netlify 部署配置 —— 仓库根目录直接发布静态站，无需构建
+#
+# 这个文件让 Netlify 在从 GitHub 自动部署时知道：
+#   1. 没有构建步骤，直接把仓库根目录当作网站根目录
+#   2. 给 CSS / JS 加上「每次都校验」的缓存策略，改完推送就能立刻生效
+
+[build]
+  publish = "."
+
+# 安全相关响应头
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 样式与脚本不做长期缓存，避免访客看到旧版本
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 页面上有 Netlify Forms（访客留言），保持 form 检测开启即可，
+# 不需要在这里额外声明任何东西；部署后到后台 Forms 页面确认即可。
